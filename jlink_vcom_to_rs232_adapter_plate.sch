@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:jlink_vcom_to_rs232_adapter_plate-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_01x06 J4
-U 1 1 5DC2D3B1
-P 4050 4750
-F 0 "J4" H 4130 4742 50  0000 L CNN
-F 1 "Conn_01x06" H 4130 4651 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical" H 4050 4750 50  0001 C CNN
-F 3 "~" H 4050 4750 50  0001 C CNN
-	1    4050 4750
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5DC402AA
@@ -205,7 +195,7 @@ U 1 1 5DC2B724
 P 6550 3850
 F 0 "U1" H 6200 5050 50  0000 C CNN
 F 1 "MAX232" H 6250 4950 50  0000 C CNN
-F 2 "Package_SO:SOP-16_4.55x10.3mm_P1.27mm" H 6600 2800 50  0001 L CNN
+F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 6600 2800 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 6550 3950 50  0001 C CNN
 	1    6550 3850
 	1    0    0    -1  
@@ -295,8 +285,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 2950 7350 2950
 Wire Wire Line
-	7500 3250 7350 3250
-Wire Wire Line
 	8400 3450 7350 3450
 Wire Wire Line
 	7350 3750 8400 3750
@@ -356,18 +344,6 @@ Wire Wire Line
 	2050 4650 2500 4650
 Wire Wire Line
 	2050 4750 2500 4750
-Text Label 3400 4550 0    50   ~ 0
-VTref
-Wire Wire Line
-	3400 4550 3850 4550
-Wire Wire Line
-	3400 4650 3850 4650
-Wire Wire Line
-	3400 4750 3850 4750
-Wire Wire Line
-	3400 4850 3850 4850
-Wire Wire Line
-	3400 4950 3850 4950
 Text Label 2050 4650 0    50   ~ 0
 TMS
 Text Label 2050 4750 0    50   ~ 0
@@ -375,48 +351,25 @@ TCK
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5DC2CD47
-P 2700 4650
-F 0 "J2" H 2780 4642 50  0000 L CNN
-F 1 "Conn_01x04" H 2780 4551 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2700 4650 50  0001 C CNN
-F 3 "~" H 2700 4650 50  0001 C CNN
-	1    2700 4650
-	1    0    0    -1  
+P 1850 4750
+F 0 "J2" H 1930 4742 50  0000 L CNN
+F 1 "Conn_01x04" H 1930 4651 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1850 4750 50  0001 C CNN
+F 3 "~" H 1850 4750 50  0001 C CNN
+	1    1850 4750
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2500 4850 2350 4850
 $Comp
 L power:GND #PWR01
 U 1 1 5DCC154F
-P 2350 4850
-F 0 "#PWR01" H 2350 4600 50  0001 C CNN
-F 1 "GND" V 2355 4722 50  0000 R CNN
-F 2 "" H 2350 4850 50  0001 C CNN
-F 3 "" H 2350 4850 50  0001 C CNN
-	1    2350 4850
-	0    1    1    0   
+P 2250 4850
+F 0 "#PWR01" H 2250 4600 50  0001 C CNN
+F 1 "GND" V 2255 4722 50  0000 R CNN
+F 2 "" H 2250 4850 50  0001 C CNN
+F 3 "" H 2250 4850 50  0001 C CNN
+	1    2250 4850
+	0    -1   -1   0   
 $EndComp
-Text Label 3400 4650 0    50   ~ 0
-TMS
-Text Label 3400 4750 0    50   ~ 0
-TCK
-Text Label 3400 4950 0    50   ~ 0
-nRESET
-$Comp
-L power:GND #PWR03
-U 1 1 5DCC1F1B
-P 3700 5050
-F 0 "#PWR03" H 3700 4800 50  0001 C CNN
-F 1 "GND" V 3705 4922 50  0000 R CNN
-F 2 "" H 3700 5050 50  0001 C CNN
-F 3 "" H 3700 5050 50  0001 C CNN
-	1    3700 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 5050 3700 5050
-Text Label 3400 4850 0    50   ~ 0
-TDO
 $Comp
 L Connector:DB9_Male J5
 U 1 1 5DCCE877
@@ -560,4 +513,132 @@ F 3 "" H 7250 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 2450 7250 2450
+Wire Wire Line
+	7350 3250 7550 3250
+Wire Wire Line
+	2050 4850 2250 4850
+$Comp
+L power:GND #PWR0101
+U 1 1 5DC65388
+P 2250 5650
+F 0 "#PWR0101" H 2250 5400 50  0001 C CNN
+F 1 "GND" V 2255 5522 50  0000 R CNN
+F 2 "" H 2250 5650 50  0001 C CNN
+F 3 "" H 2250 5650 50  0001 C CNN
+	1    2250 5650
+	0    -1   -1   0   
+$EndComp
+Text Label 2050 5350 0    50   ~ 0
+nRESET
+Text Label 2050 5450 0    50   ~ 0
+TCK
+Text Label 2050 5550 0    50   ~ 0
+TMS
+Wire Wire Line
+	2050 5550 2500 5550
+Wire Wire Line
+	2050 5450 2500 5450
+Wire Wire Line
+	2050 5350 2500 5350
+Text Label 2050 5750 0    50   ~ 0
+VTref
+$Comp
+L Connector_Generic:Conn_01x05 J8
+U 1 1 5DC5DBD3
+P 1850 5550
+F 0 "J8" H 2000 5550 50  0000 C CNN
+F 1 "h7_tool_swd" H 2150 5450 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 1850 5550 50  0001 C CNN
+F 3 "~" H 1850 5550 50  0001 C CNN
+	1    1850 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5750 2500 5750
+Wire Wire Line
+	2050 5650 2250 5650
+$Comp
+L Connector_Generic:Conn_01x05 J9
+U 1 1 5DC95693
+P 3200 5550
+F 0 "J9" H 3350 5550 50  0000 C CNN
+F 1 "Conn_01x05" H 3500 5450 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 3200 5550 50  0001 C CNN
+F 3 "~" H 3200 5550 50  0001 C CNN
+	1    3200 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 5050 3600 5050
+Text Label 3400 4850 0    50   ~ 0
+TDO
+$Comp
+L power:GND #PWR03
+U 1 1 5DCC1F1B
+P 3600 5050
+F 0 "#PWR03" H 3600 4800 50  0001 C CNN
+F 1 "GND" V 3605 4922 50  0000 R CNN
+F 2 "" H 3600 5050 50  0001 C CNN
+F 3 "" H 3600 5050 50  0001 C CNN
+	1    3600 5050
+	0    -1   -1   0   
+$EndComp
+Text Label 3400 4950 0    50   ~ 0
+nRESET
+Text Label 3400 4750 0    50   ~ 0
+TCK
+Text Label 3400 4650 0    50   ~ 0
+TMS
+Wire Wire Line
+	3400 4950 3850 4950
+Wire Wire Line
+	3400 4850 3850 4850
+Wire Wire Line
+	3400 4750 3850 4750
+Wire Wire Line
+	3400 4650 3850 4650
+Wire Wire Line
+	3400 4550 3850 4550
+Text Label 3400 4550 0    50   ~ 0
+VTref
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5DC2D3B1
+P 3200 4850
+F 0 "J4" H 3280 4842 50  0000 L CNN
+F 1 "Conn_01x06" H 3280 4751 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical" H 3200 4850 50  0001 C CNN
+F 3 "~" H 3200 4850 50  0001 C CNN
+	1    3200 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DC9B28E
+P 3600 5750
+F 0 "#PWR0102" H 3600 5500 50  0001 C CNN
+F 1 "GND" V 3605 5622 50  0000 R CNN
+F 2 "" H 3600 5750 50  0001 C CNN
+F 3 "" H 3600 5750 50  0001 C CNN
+	1    3600 5750
+	0    -1   -1   0   
+$EndComp
+Text Label 3400 5550 0    50   ~ 0
+TCK
+Text Label 3400 5450 0    50   ~ 0
+TMS
+Wire Wire Line
+	3400 5650 3850 5650
+Wire Wire Line
+	3400 5550 3850 5550
+Wire Wire Line
+	3400 5450 3850 5450
+Wire Wire Line
+	3400 5350 3850 5350
+Text Label 3400 5350 0    50   ~ 0
+VTref
+Text Label 3400 5650 0    50   ~ 0
+nRESET
+Wire Wire Line
+	3400 5750 3600 5750
 $EndSCHEMATC
