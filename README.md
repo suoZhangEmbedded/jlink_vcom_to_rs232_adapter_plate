@@ -13,5 +13,7 @@
 
 6、完整的 jlink 20pin 接口转接
 
-
 7、[jlink 20 pin 接口描述](https://www.segger.com/products/debug-probes/j-link/technology/interface-description/)
+
+![image](/image/jlink_vcom_to_rs232_adapter_plate.png)
+
