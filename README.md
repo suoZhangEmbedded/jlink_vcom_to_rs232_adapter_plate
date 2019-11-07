@@ -1,6 +1,10 @@
 # jlink_vcom_to_rs232_adapter_plate
 # jlink 虚拟串口 转 RS232接口 转接板
 
+![image](/image/jlink_vcom_to_rs232_adapter_plate.png)
+
+
+
 1、jlink to 232 功能 接口 DB9 公口
 
 2、jlink 转 SWD 接口 XH-4A
@@ -15,5 +19,5 @@
 
 7、[jlink 20 pin 接口描述](https://www.segger.com/products/debug-probes/j-link/technology/interface-description/)
 
-![image](/image/jlink_vcom_to_rs232_adapter_plate.png)
+
 
