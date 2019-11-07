@@ -641,4 +641,117 @@ Text Label 3400 5650 0    50   ~ 0
 nRESET
 Wire Wire Line
 	3400 5750 3600 5750
+$Comp
+L Device:R R1
+U 1 1 5DC42984
+P 6350 5800
+F 0 "R1" V 6143 5800 50  0000 C CNN
+F 1 "R" V 6234 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6280 5800 50  0001 C CNN
+F 3 "~" H 6350 5800 50  0001 C CNN
+	1    6350 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DC45839
+P 6800 5800
+F 0 "D1" H 6793 5545 50  0000 C CNN
+F 1 "LED" H 6793 5636 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6800 5800 50  0001 C CNN
+F 3 "~" H 6800 5800 50  0001 C CNN
+	1    6800 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5DC46F08
+P 7100 5800
+F 0 "#PWR0103" H 7100 5550 50  0001 C CNN
+F 1 "GND" V 7105 5672 50  0000 R CNN
+F 2 "" H 7100 5800 50  0001 C CNN
+F 3 "" H 7100 5800 50  0001 C CNN
+	1    7100 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 5800 6950 5800
+Wire Wire Line
+	6650 5800 6500 5800
+Wire Wire Line
+	5600 5800 6200 5800
+Text Label 5600 5800 0    50   ~ 0
+5V-Supply
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DC86AE9
+P 5750 4550
+F 0 "TP2" V 5853 4622 50  0000 C CNN
+F 1 "TestPoint" V 5854 4622 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5950 4550 50  0001 C CNN
+F 3 "~" H 5950 4550 50  0001 C CNN
+	1    5750 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DC88682
+P 5750 4150
+F 0 "TP1" V 5853 4222 50  0000 C CNN
+F 1 "TestPoint" V 5854 4222 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5950 4150 50  0001 C CNN
+F 3 "~" H 5950 4150 50  0001 C CNN
+	1    5750 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5DC89304
+P 8550 5350
+F 0 "TP3" V 8653 5422 50  0000 C CNN
+F 1 "TestPoint" V 8654 5422 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 5350 50  0001 C CNN
+F 3 "~" H 8750 5350 50  0001 C CNN
+	1    8550 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 5350 8550 5350
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DC97FF8
+P 7500 4150
+F 0 "TP4" V 7603 4222 50  0000 C CNN
+F 1 "TestPoint" V 7604 4222 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7700 4150 50  0001 C CNN
+F 3 "~" H 7700 4150 50  0001 C CNN
+	1    7500 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DC9890A
+P 7500 4550
+F 0 "TP5" V 7603 4622 50  0000 C CNN
+F 1 "TestPoint" V 7604 4622 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7700 4550 50  0001 C CNN
+F 3 "~" H 7700 4550 50  0001 C CNN
+	1    7500 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 4150 7350 4150
+Wire Wire Line
+	7500 4550 7350 4550
+$Comp
+L Graphic:SYM_ESD_Small #SYM1
+U 1 1 5DCB5DFD
+P 8300 4550
+F 0 "#SYM1" H 8300 4690 50  0001 C CNN
+F 1 "SYM_ESD_Small" H 8300 4425 50  0001 C CNN
+F 2 "" H 8300 4560 50  0001 C CNN
+F 3 "~" H 8300 4560 50  0001 C CNN
+	1    8300 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
