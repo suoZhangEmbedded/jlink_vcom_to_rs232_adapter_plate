@@ -1,0 +1,34 @@
+Source,C:\Users\admin\Desktop\jlink_vcom_to_rs232_adapter_plate\jlink_vcom_to_rs232_adapter_plate.sch
+Kicad Rev,Eeschema (5.1.4)-1
+Generated Date,2019/11/11 10:23:11
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+J3,Conn_02x10_Odd_Even,Connector_Generic,Conn_02x10_Odd_Even
+J1,排母 2*10P 2.54mm 弯针,Connector_Generic,Conn_02x10_Odd_Even
+U1,MAX232,Interface_UART,MAX232
+C2,CAP,pspice,CAP
+C1,CAP,pspice,CAP
+C4,CAP,pspice,CAP
+C5,CAP,pspice,CAP
+C6,CAP,pspice,CAP
+C7,CAP,pspice,CAP
+J2,Conn_01x04,Connector_Generic,Conn_01x04
+J5,DB9_Male,Connector,DB9_Male
+J7,Conn_01x03,Connector_Generic,Conn_01x03
+J6,Conn_01x03,Connector_Generic,Conn_01x03
+C3,CAP,pspice,CAP
+J8,h7_tool_swd,Connector_Generic,Conn_01x05
+J9,Conn_01x05,Connector_Generic,Conn_01x05
+J4,Conn_01x06,Connector_Generic,Conn_01x06
+R1,R,Device,R
+D1,LED,Device,LED
+TP2,TestPoint,Connector,TestPoint
+TP1,TestPoint,Connector,TestPoint
+TP3,TestPoint,Connector,TestPoint
+TP4,TestPoint,Connector,TestPoint
+TP5,TestPoint,Connector,TestPoint
